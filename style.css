@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #f59ca2;
+}
+
+@font-face {
+    font-family: "Senang";
+    src: url(Fonts/Senang\ Banyol.ttf) format("truetype");
+    src: url(Fonts/Senang\ Banyol.woff) format("woff");
+    src: url(Fonts/Senang\ Banyol.woff2) format(".woff2");
+}
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1 fr);
+    justify-items: stretch;
+}
+
+/*Header*/
+
+header {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    background-color: white;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-family: "Senang";
+    font-size: 5rem;
+    color: #aee3ed;
+    margin-left: 60px;
+    margin-right: 30px;
+    text-align: left;
+}
+
+header img {
+    max-width: 350px;
+    max-height: 350px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+
+header nav ul li {
+    margin-top: 10px;
+    background-color: #aee3ed;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 200px;
+    border-radius: 150px;
+}
+
+/*Our Flavours*/
+
+.flavours {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.flavours h1 {
+    font-family: "Senang";
+    font-size: 3rem;
+    padding-top: 20px;
+    color: #aee3ed;
+}
+
+.flavgal {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0px 50px 50px 50px;
+}
+
+.flavgal img {
+    height: 300px;
+    width: 300px;
+}
+
+/*Price List*/
+
+.prices {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    margin-top: 20px;
+    margin-right: 20px;
+    border: white solid 5px;
+    background-color: #292a2a;
+}
+
+.prices h2 {
+    font-size: 2.5rem;
+    font-family: "Senang";
+    color: #aee3ed;
+    padding-top: 20px;
+}
+
+.prices ul {
+    text-align: left;
+    padding: 60px;
+    margin-left: 10px;
+    list-style: none;
+}
+
+.prices ul li {
+    margin: 20px;
+    color: #fbfdfc;
+    font-size: 1.5rem;
+}
+
+.prices ul li span {
+    font-weight: bold;
+}
+
+/*Meet the Team*/
+
+.team {
+    grid-column: 1 / 3;
+    grid-row: 4 / 6;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.team h1 {
+    font-family: "Senang";
+    font-size: 3rem;
+    padding-top: 20px;
+    color: #aee3ed;
+}
+
+.teamgal {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0px 50px 50px 50px;
+}
+
+.teamgal img {
+    height: 300px;
+    width: 300px;
+}
+
+#job {
+    font-size: .75rem;
+}
+
+/*Our Mission*/
+
+.mission {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: white solid 5px;
+    background-color: #292a2a;
+}
+
+.mission h2 {
+    font-size: 2.5rem;
+    font-family: "Senang";
+    color: #aee3ed;
+    padding-top: 20px;
+}
+
+.mission p {
+    margin: 30px;
+    color: #fbfdfc;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/*Contact*/
+
+.contact {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: white solid 5px;
+    background-color: #292a2a;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    font-family: "Senang";
+    color: #aee3ed;
+    padding-top: 20px;
+}
+
+.contact p {
+    margin: 30px;
+    color: #fbfdfc;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/*Footer*/
+
+footer {
+    grid-column: 1 / 4;
+    grid-row: 6 / 7;
+    background-color: #aee3ed;
+    color: #fbfdfc;
+    font-family: "Senang";
+    padding: 10px;
+    text-align: left;
+    margin-top: 20px;
+}
